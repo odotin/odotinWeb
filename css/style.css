@@ -1,0 +1,87 @@
+/* ==============================
+   スムーズスクロール
+============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==============================
+   各セクション
+============================== */
+
+.section {
+    min-height: 100vh;
+
+    padding: 100px 30px;
+
+    scroll-margin-top: 50px;
+}
+
+
+/* 見出し */
+
+.section h2 {
+    font-size: 40px;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+/* TOP */
+
+/* メンバー */
+
+.member-list {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.member-card {
+    width: 280px;
+
+    padding: 30px;
+
+    background-color: #fff0f6;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+
+/* スマホ */
+
+@media screen and (max-width: 600px) {
+
+    .section {
+        padding: 80px 20px;
+    }
+
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+
+    .top-section h1 {
+        font-size: 38px;
+    }
+
+
+    .member-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+}
